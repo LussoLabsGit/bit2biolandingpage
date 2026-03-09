@@ -113,7 +113,7 @@ export default function Page() {
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(45,212,191,0.08),_transparent_28%),radial-gradient(circle_at_bottom_right,_rgba(59,130,246,0.08),_transparent_24%)]" />
 
         <div className="relative mx-auto max-w-7xl px-6 py-24 lg:px-8">
-          <div className="max-w-3xl">
+          <div className="mx-auto max-w-4xl text-center">
             <div className="inline-flex rounded-full border border-teal-400/20 bg-teal-400/10 px-4 py-1 text-xs uppercase tracking-[0.28em] text-teal-200">
               The Problem
             </div>
@@ -126,7 +126,7 @@ export default function Page() {
               But most supplements still are.
             </p>
 
-            <p className="mt-4 max-w-2xl text-base leading-8 text-slate-400 md:text-lg">
+            <p className="mx-auto mt-4 max-w-3xl text-base leading-8 text-slate-400 md:text-lg">
               Traditional supplements are built for the average customer, mass
               manufactured in advance, and sold as one-size-fits-all formulas.
               Bit2Bio takes the opposite approach by starting with your
@@ -134,7 +134,7 @@ export default function Page() {
             </p>
           </div>
 
-          <div className="mt-16 grid gap-8 xl:grid-cols-[1.05fr_1.05fr_0.8fr]">
+          <div className="mt-16 grid gap-8 lg:grid-cols-2">
             <div className="rounded-[2rem] border border-white/10 bg-slate-950/90 p-8 shadow-[0_0_0_1px_rgba(255,255,255,0.02)]">
               <div className="flex items-center justify-between gap-4">
                 <div className="text-sm uppercase tracking-[0.28em] text-slate-400">
@@ -168,14 +168,27 @@ export default function Page() {
                 </li>
               </ul>
 
-              <div className="mt-10 rounded-2xl border border-white/10 bg-white/[0.03] p-5">
+              <div className="mt-10 rounded-[1.5rem] border border-white/10 bg-white/[0.03] p-5">
                 <div className="text-xs uppercase tracking-[0.24em] text-slate-500">
                   Result
                 </div>
-                <p className="mt-3 text-base leading-7 text-slate-300">
-                  More bottles, overlapping ingredients, and a routine that was
-                  never truly designed for you.
-                </p>
+
+                <div className="mt-4 grid items-center gap-4 sm:grid-cols-[1.1fr_0.9fr]">
+                  <p className="text-base leading-7 text-slate-300">
+                    More bottles, overlapping ingredients, and a routine that was
+                    never truly designed for you.
+                  </p>
+
+                  <div className="overflow-hidden rounded-2xl border border-white/10 bg-slate-900/80 p-3">
+                    <Image
+                      src="/oldmodel.png"
+                      alt="Generic supplement bottles"
+                      width={500}
+                      height={360}
+                      className="h-auto w-full object-contain"
+                    />
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -185,7 +198,7 @@ export default function Page() {
                   Bit2Bio
                 </div>
                 <div className="rounded-full border border-teal-300/20 bg-teal-300/10 px-3 py-1 text-xs text-teal-100">
-                  Better Model
+                  Our Model
                 </div>
               </div>
 
@@ -212,75 +225,27 @@ export default function Page() {
                 </li>
               </ul>
 
-              <div className="mt-10 rounded-2xl border border-teal-300/15 bg-slate-950/30 p-5 backdrop-blur-sm">
+              <div className="mt-10 rounded-[1.5rem] border border-teal-300/15 bg-slate-950/30 p-5 backdrop-blur-sm">
                 <div className="text-xs uppercase tracking-[0.24em] text-teal-200/80">
                   Result
                 </div>
-                <p className="mt-3 text-base leading-7 text-slate-100">
-                  One smarter formula tailored to your biology instead of a shelf
-                  full of generic products.
-                </p>
-              </div>
-            </div>
 
-            <div className="rounded-[2rem] border border-white/10 bg-slate-950/70 p-6">
-              <div className="text-sm uppercase tracking-[0.26em] text-slate-400">
-                Comparison Graphic
-              </div>
+                <div className="mt-4 grid items-center gap-4 sm:grid-cols-[1.1fr_0.9fr]">
+                  <p className="text-base leading-7 text-slate-100">
+                    One smarter formula tailored to your biology instead of a shelf
+                    full of generic products.
+                  </p>
 
-              <h3 className="mt-4 text-2xl font-semibold text-white">
-                From guesswork to precision
-              </h3>
-
-              <div className="mt-8 space-y-4">
-                <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-4">
-                  <div className="text-xs uppercase tracking-[0.22em] text-slate-500">
-                    Generic path
-                  </div>
-                  <div className="mt-3 flex flex-wrap items-center gap-2 text-sm text-slate-300">
-                    <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1">
-                      Mass formula
-                    </span>
-                    <span className="text-slate-500">→</span>
-                    <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1">
-                      Guess dosing
-                    </span>
-                    <span className="text-slate-500">→</span>
-                    <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1">
-                      Multiple bottles
-                    </span>
+                  <div className="overflow-hidden rounded-2xl border border-teal-300/15 bg-slate-950/40 p-3">
+                    <Image
+                      src="/bit2biomodel.png"
+                      alt="Bit2Bio personalized formula bottle"
+                      width={500}
+                      height={360}
+                      className="h-auto w-full object-contain"
+                    />
                   </div>
                 </div>
-
-                <div className="rounded-2xl border border-teal-300/20 bg-gradient-to-br from-teal-400/10 to-cyan-400/10 p-4">
-                  <div className="text-xs uppercase tracking-[0.22em] text-teal-100/80">
-                    Bit2Bio path
-                  </div>
-                  <div className="mt-3 flex flex-wrap items-center gap-2 text-sm text-white">
-                    <span className="rounded-full border border-teal-300/20 bg-slate-950/40 px-3 py-1">
-                      Biomarkers
-                    </span>
-                    <span className="text-teal-200">→</span>
-                    <span className="rounded-full border border-teal-300/20 bg-slate-950/40 px-3 py-1">
-                      Blueprint
-                    </span>
-                    <span className="text-teal-200">→</span>
-                    <span className="rounded-full border border-teal-300/20 bg-slate-950/40 px-3 py-1">
-                      Personal formula
-                    </span>
-                  </div>
-                </div>
-              </div>
-
-              <div className="mt-8 rounded-2xl border border-white/10 bg-white/[0.03] p-5">
-                <div className="text-xs uppercase tracking-[0.22em] text-slate-500">
-                  Design Note
-                </div>
-                <p className="mt-3 text-sm leading-7 text-slate-300">
-                  A clean comparison graphic works better here than a photo. It
-                  makes the problem instantly understandable and keeps the page
-                  feeling premium.
-                </p>
               </div>
             </div>
           </div>
