@@ -440,50 +440,150 @@ export default function Page() {
       </section>
 
       {/* HOW IT WORKS */}
-      <section id="how" className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-        <h2 className="text-4xl font-semibold tracking-tight md:text-5xl">
-          Analyze. Build. Deliver.
-        </h2>
+<section
+  id="how"
+  className="relative overflow-hidden bg-slate-950 px-6 py-24 lg:px-8"
+>
+  <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(45,212,191,0.08),_transparent_28%),radial-gradient(circle_at_bottom_right,_rgba(59,130,246,0.08),_transparent_24%)]" />
 
-        <div className="mt-12 grid gap-6 lg:grid-cols-3">
-          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
-            <div className="text-sm text-teal-300">01</div>
-            <h3 className="mt-3 text-2xl font-semibold">Analyze</h3>
-            <p className="mt-4 text-slate-300">
-              Upload biomarkers and health data to identify the nutrients your
-              body actually needs.
-            </p>
-            <p className="mt-4 text-sm text-teal-200">
-              Your biomarkers become your nutrient blueprint.
-            </p>
-          </div>
+  <div className="relative mx-auto max-w-7xl">
+    <div className="max-w-3xl">
+      <div className="inline-flex rounded-full border border-teal-400/20 bg-teal-400/10 px-4 py-1 text-xs uppercase tracking-[0.28em] text-teal-200">
+        How it works
+      </div>
 
-          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
-            <div className="text-sm text-teal-300">02</div>
-            <h3 className="mt-3 text-2xl font-semibold">Build</h3>
-            <p className="mt-4 text-slate-300">
-              Bit2Bio transforms your health data into a personalized nutrient
-              formula.
-            </p>
-            <p className="mt-4 text-sm text-teal-200">
-              Your data becomes your formula.
-            </p>
-          </div>
+      <h2 className="mt-6 text-4xl font-semibold tracking-tight md:text-5xl lg:text-6xl">
+        Analyze. Build. Deliver.
+      </h2>
 
-          <div className="rounded-3xl border border-white/10 bg-white/5 p-8">
-            <div className="text-sm text-teal-300">03</div>
-            <h3 className="mt-3 text-2xl font-semibold">Deliver</h3>
-            <p className="mt-4 text-slate-300">
-              Your personalized formula is prepared fresh and delivered directly
-              to your door.
-            </p>
-            <p className="mt-4 text-sm text-teal-200">
-              Freshly made. Easy to follow.
-            </p>
+      <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-400">
+        A simple, personalized workflow that turns your biomarker data into one
+        nutrient formula designed for your body.
+      </p>
+    </div>
+
+    <div className="mt-16 grid gap-6 lg:grid-cols-3">
+      {/* 01 ANALYZE */}
+      <div className="group relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.03] p-8 transition hover:border-teal-300/20 hover:bg-white/[0.04]">
+        <div className="absolute inset-x-8 top-0 h-px bg-gradient-to-r from-transparent via-teal-300/40 to-transparent" />
+
+        <div className="flex items-center justify-between">
+          <div className="text-sm font-medium text-teal-300">01</div>
+          <div className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-slate-400">
+            Analyze
           </div>
         </div>
-      </section>
 
+        <div className="mt-6 overflow-hidden rounded-[1.5rem] border border-white/10 bg-slate-900/80 p-4">
+          <div className="flex aspect-[4/3] items-center justify-center rounded-[1.25rem] bg-[radial-gradient(circle_at_center,_rgba(45,212,191,0.12),_transparent_55%),linear-gradient(to_bottom_right,_rgba(15,23,42,0.95),_rgba(2,6,23,0.98))]">
+            <div className="relative h-44 w-44">
+              <div className="absolute inset-0 rounded-full border border-teal-300/20" />
+              <div className="absolute inset-4 rounded-full border border-teal-300/30" />
+              <div className="absolute inset-8 rounded-full border border-cyan-300/40" />
+              <div className="absolute left-1/2 top-0 h-full w-px -translate-x-1/2 bg-teal-300/20" />
+              <div className="absolute top-1/2 h-px w-full -translate-y-1/2 bg-teal-300/20" />
+              <div className="absolute left-[20%] top-[24%] h-3 w-3 rounded-full bg-teal-300 shadow-[0_0_16px_rgba(94,234,212,0.9)]" />
+              <div className="absolute right-[18%] top-[34%] h-3 w-3 rounded-full bg-cyan-300 shadow-[0_0_16px_rgba(103,232,249,0.9)]" />
+              <div className="absolute bottom-[18%] left-[30%] h-3 w-3 rounded-full bg-sky-300 shadow-[0_0_16px_rgba(125,211,252,0.9)]" />
+              <div className="absolute bottom-[22%] right-[28%] h-3 w-3 rounded-full bg-teal-200 shadow-[0_0_16px_rgba(153,246,228,0.9)]" />
+            </div>
+          </div>
+        </div>
+
+        <h3 className="mt-8 text-3xl font-semibold text-white">Analyze</h3>
+
+        <p className="mt-4 text-lg leading-8 text-slate-300">
+          Upload biomarkers and health data to identify the nutrients your body
+          actually needs.
+        </p>
+
+        <p className="mt-6 text-base font-medium text-teal-200">
+          Your biomarkers become your nutrient blueprint.
+        </p>
+      </div>
+
+      {/* 02 BUILD */}
+      <div className="group relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.03] p-8 transition hover:border-teal-300/20 hover:bg-white/[0.04]">
+        <div className="absolute inset-x-8 top-0 h-px bg-gradient-to-r from-transparent via-teal-300/40 to-transparent" />
+
+        <div className="flex items-center justify-between">
+          <div className="text-sm font-medium text-teal-300">02</div>
+          <div className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-slate-400">
+            Build
+          </div>
+        </div>
+
+        <div className="mt-6 overflow-hidden rounded-[1.5rem] border border-white/10 bg-slate-900/80 p-4">
+          <div className="flex aspect-[4/3] items-center justify-center rounded-[1.25rem] bg-[radial-gradient(circle_at_center,_rgba(45,212,191,0.12),_transparent_55%),linear-gradient(to_bottom_right,_rgba(15,23,42,0.95),_rgba(2,6,23,0.98))]">
+            <div className="relative flex items-center gap-4">
+              <div className="flex h-20 w-20 items-center justify-center rounded-3xl border border-teal-300/20 bg-teal-300/10">
+                <div className="grid grid-cols-2 gap-1">
+                  <span className="h-3 w-3 rounded-full bg-teal-300" />
+                  <span className="h-3 w-3 rounded-full bg-cyan-300" />
+                  <span className="h-3 w-3 rounded-full bg-sky-300" />
+                  <span className="h-3 w-3 rounded-full bg-emerald-200" />
+                </div>
+              </div>
+
+              <span className="text-3xl text-teal-200">→</span>
+
+              <div className="flex h-24 w-16 rotate-[18deg] items-center justify-center rounded-full border border-teal-300/20 bg-slate-950/60 shadow-[0_0_25px_rgba(45,212,191,0.15)]">
+                <div className="h-16 w-8 rounded-full bg-gradient-to-b from-teal-200/70 via-cyan-300/70 to-sky-300/70" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h3 className="mt-8 text-3xl font-semibold text-white">Build</h3>
+
+        <p className="mt-4 text-lg leading-8 text-slate-300">
+          Bit2Bio transforms your health data into a personalized nutrient
+          formula.
+        </p>
+
+        <p className="mt-6 text-base font-medium text-teal-200">
+          Your data becomes your formula.
+        </p>
+      </div>
+
+      {/* 03 DELIVER */}
+      <div className="group relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.03] p-8 transition hover:border-teal-300/20 hover:bg-white/[0.04]">
+        <div className="absolute inset-x-8 top-0 h-px bg-gradient-to-r from-transparent via-teal-300/40 to-transparent" />
+
+        <div className="flex items-center justify-between">
+          <div className="text-sm font-medium text-teal-300">03</div>
+          <div className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-slate-400">
+            Deliver
+          </div>
+        </div>
+
+        <div className="mt-6 overflow-hidden rounded-[1.5rem] border border-white/10 bg-slate-900/80 p-4">
+          <div className="flex aspect-[4/3] items-center justify-center rounded-[1.25rem] bg-[radial-gradient(circle_at_center,_rgba(45,212,191,0.12),_transparent_55%),linear-gradient(to_bottom_right,_rgba(15,23,42,0.95),_rgba(2,6,23,0.98))]">
+            <div className="relative">
+              <div className="h-24 w-28 rounded-2xl border border-teal-300/20 bg-slate-950/70 shadow-[0_0_25px_rgba(45,212,191,0.12)]" />
+              <div className="absolute left-4 top-4 h-5 w-12 rounded bg-white/10" />
+              <div className="absolute left-1/2 top-1/2 h-8 w-8 -translate-x-1/2 -translate-y-1/2 rounded-full border border-teal-300/30 bg-teal-300/10" />
+              <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 text-sm text-teal-200">
+                ✓
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h3 className="mt-8 text-3xl font-semibold text-white">Deliver</h3>
+
+        <p className="mt-4 text-lg leading-8 text-slate-300">
+          Your personalized formula is prepared fresh and delivered directly to
+          your door.
+        </p>
+
+        <p className="mt-6 text-base font-medium text-teal-200">
+          Freshly made. Easy to follow.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
       {/* CTA */}
       <section id="plans" className="mx-auto max-w-7xl px-6 py-24 lg:px-8">
         <div className="rounded-3xl border border-white/10 bg-gradient-to-r from-teal-400/10 to-cyan-400/10 p-10 text-center md:p-14">
