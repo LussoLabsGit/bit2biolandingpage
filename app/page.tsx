@@ -94,7 +94,7 @@ export default function Page() {
             </div>
 
             <Image
-              src="/Herosection.png"
+              src="/herosection.png"
               alt="Bit2Bio nutrient printer"
               width={900}
               height={900}
@@ -198,7 +198,7 @@ export default function Page() {
                   Bit2Bio
                 </div>
                 <div className="rounded-full border border-teal-300/20 bg-teal-300/10 px-3 py-1 text-xs text-teal-100">
-                  Our Model
+                  Better Model
                 </div>
               </div>
 
@@ -380,23 +380,61 @@ export default function Page() {
     </div>
   </div>
 </section>
+
       {/* PRINTER */}
-      <section id="about" className="border-y border-white/10 bg-slate-900/60">
-        <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-          <div className="max-w-3xl">
-            <h2 className="text-4xl font-semibold tracking-tight md:text-5xl">
+      <section
+        id="about"
+        className="relative overflow-hidden border-y border-white/10 bg-slate-900/60"
+      >
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_rgba(45,212,191,0.08),_transparent_28%),radial-gradient(circle_at_bottom_left,_rgba(59,130,246,0.08),_transparent_24%)]" />
+
+        <div className="relative mx-auto grid max-w-7xl items-center gap-12 px-6 py-24 lg:grid-cols-2 lg:gap-16 lg:px-8">
+          <div className="max-w-2xl">
+            <div className="inline-flex rounded-full border border-teal-400/20 bg-teal-400/10 px-4 py-1 text-xs uppercase tracking-[0.28em] text-teal-200">
+              Precision production
+            </div>
+
+            <h2 className="mt-6 text-4xl font-semibold tracking-tight md:text-5xl lg:text-6xl">
               From supplement factories to nutrient printers.
             </h2>
 
-            <p className="mt-6 text-lg text-slate-300">
+            <p className="mt-6 text-xl leading-8 text-slate-300">
               Bit2Bio replaces bulk manufacturing with precision nutrient
               formulation.
             </p>
 
-            <p className="mt-4 max-w-xl text-slate-400">
+            <p className="mt-4 max-w-xl text-base leading-8 text-slate-400 md:text-lg">
               Your nutrients are designed from your biomarkers, built into a
               personal formula, and prepared specifically for your body.
             </p>
+
+            <div className="mt-10 flex flex-wrap gap-3 text-sm">
+              <span className="rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-slate-200">
+                Biomarker-guided
+              </span>
+              <span className="rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-slate-200">
+                Precision formulated
+              </span>
+              <span className="rounded-full border border-white/10 bg-white/[0.04] px-4 py-2 text-slate-200">
+                Freshly prepared
+              </span>
+            </div>
+          </div>
+
+          <div className="relative">
+            <div className="absolute inset-0 -z-10 blur-3xl">
+              <div className="mx-auto h-64 w-64 rounded-full bg-cyan-400/10" />
+            </div>
+
+            <div className="overflow-hidden rounded-[2rem] border border-teal-300/15 bg-slate-950/40 p-4 shadow-[0_0_60px_rgba(45,212,191,0.08)]">
+              <Image
+                src="/factory.png"
+                alt="Futuristic nutrient production facility"
+                width={1200}
+                height={900}
+                className="h-auto w-full rounded-[1.5rem] object-cover"
+              />
+            </div>
           </div>
         </div>
       </section>
