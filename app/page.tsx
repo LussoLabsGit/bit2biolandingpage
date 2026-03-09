@@ -94,7 +94,7 @@ export default function Page() {
             </div>
 
             <Image
-              src="/herosection.png"
+              src="/Herosection.png"
               alt="Bit2Bio nutrient printer"
               width={900}
               height={900}
