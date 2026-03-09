@@ -252,33 +252,134 @@ export default function Page() {
         </div>
       </section>
 
-      {/* STACK */}
-      <section className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
-        <div className="max-w-3xl">
-          <h2 className="text-4xl font-semibold tracking-tight md:text-5xl">
-            Most people don&apos;t take one supplement.
-          </h2>
+      {/* STACK SECTION */}
+<section className="relative overflow-hidden border-y border-white/10 bg-slate-950">
+  <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(45,212,191,0.08),_transparent_28%),radial-gradient(circle_at_bottom_right,_rgba(59,130,246,0.08),_transparent_24%)]" />
 
-          <p className="mt-6 text-lg text-slate-300">They manage a stack.</p>
+  <div className="relative mx-auto max-w-7xl px-6 py-24 lg:px-8">
+    <div className="mx-auto max-w-4xl text-center">
+      <div className="inline-flex rounded-full border border-teal-400/20 bg-teal-400/10 px-4 py-1 text-xs uppercase tracking-[0.28em] text-teal-200">
+        One formula instead of a stack
+      </div>
+
+      <h2 className="mt-6 text-4xl font-semibold tracking-tight md:text-5xl lg:text-6xl">
+        Most people don&apos;t take one supplement.
+      </h2>
+
+      <p className="mt-6 text-xl text-slate-300">
+        They manage 10 to 15 different products.
+      </p>
+
+      <p className="mx-auto mt-4 max-w-3xl text-base leading-8 text-slate-400 md:text-lg">
+        Multiple bottles. Duplicated nutrients. Guessing doses. Different
+        routines. Bit2Bio simplifies all of that into one personalized formula
+        designed for your biology and your preferred flavor.
+      </p>
+    </div>
+
+    <div className="mt-16 grid items-stretch gap-8 lg:grid-cols-[1fr_auto_1fr] lg:gap-6">
+      {/* LEFT CARD */}
+      <div className="rounded-[2rem] border border-white/10 bg-white/[0.03] p-6 md:p-8">
+        <div className="flex items-center justify-between gap-4">
+          <div className="text-sm uppercase tracking-[0.28em] text-slate-400">
+            Traditional routine
+          </div>
+          <div className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-slate-400">
+            Stack
+          </div>
         </div>
 
-        <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-4">
-          {supplementStack.map((item) => (
-            <div
-              key={item}
-              className="rounded-2xl border border-white/10 bg-white/5 p-4 text-center text-sm text-slate-200"
-            >
-              {item}
-            </div>
-          ))}
+        <h3 className="mt-6 text-3xl font-semibold text-white">
+          Too many bottles to manage
+        </h3>
+
+        <div className="mt-8 overflow-hidden rounded-[1.5rem] border border-white/10 bg-slate-900/80 p-4">
+          <Image
+            src="/stack.png"
+            alt="Multiple supplement bottles"
+            width={900}
+            height={700}
+            className="h-auto w-full object-contain"
+          />
         </div>
 
-        <p className="mt-10 max-w-2xl text-slate-400">
-          Multiple bottles. Duplicated nutrients. Guessing doses. Your
-          supplement routine was never designed for your biology.
+        <div className="mt-8 grid grid-cols-2 gap-3 text-sm text-slate-300">
+          <div className="rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-3">
+            Multiple bottles
+          </div>
+          <div className="rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-3">
+            Duplicate nutrients
+          </div>
+          <div className="rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-3">
+            Guessing doses
+          </div>
+          <div className="rounded-2xl border border-white/10 bg-white/[0.03] px-4 py-3">
+            Hard to maintain
+          </div>
+        </div>
+
+        <p className="mt-6 text-base leading-7 text-slate-400">
+          Most supplement routines become complicated fast, and they were never
+          truly designed around your biology.
         </p>
-      </section>
+      </div>
 
+      {/* CENTER ARROW / DIVIDER */}
+      <div className="hidden items-center justify-center lg:flex">
+        <div className="flex h-16 w-16 items-center justify-center rounded-full border border-teal-300/20 bg-teal-300/10 text-3xl text-teal-200 shadow-[0_0_30px_rgba(45,212,191,0.15)]">
+          →
+        </div>
+      </div>
+
+      {/* RIGHT CARD */}
+      <div className="rounded-[2rem] border border-teal-400/20 bg-gradient-to-br from-teal-400/10 via-cyan-400/10 to-slate-900 p-6 shadow-[0_0_60px_rgba(45,212,191,0.08)] md:p-8">
+        <div className="flex items-center justify-between gap-4">
+          <div className="text-sm uppercase tracking-[0.28em] text-teal-200">
+            Bit2Bio
+          </div>
+          <div className="rounded-full border border-teal-300/20 bg-teal-300/10 px-3 py-1 text-xs text-teal-100">
+            Personalized
+          </div>
+        </div>
+
+        <h3 className="mt-6 text-3xl font-semibold text-white">
+          One formula, built for you
+        </h3>
+
+        <div className="mt-8 overflow-hidden rounded-[1.5rem] border border-teal-300/15 bg-slate-950/40 p-4">
+          <Image
+            src="/personalized.png"
+            alt="Personalized supplement formula"
+            width={900}
+            height={700}
+            className="h-auto w-full object-contain"
+          />
+        </div>
+
+        <div className="mt-8 flex flex-wrap gap-3 text-sm">
+          <span className="rounded-full border border-teal-300/20 bg-slate-950/40 px-4 py-2 text-teal-100">
+            Your nutrient mix
+          </span>
+          <span className="rounded-full border border-teal-300/20 bg-slate-950/40 px-4 py-2 text-teal-100">
+            Personalized dose
+          </span>
+          <span className="rounded-full border border-teal-300/20 bg-slate-950/40 px-4 py-2 text-teal-100">
+            Flavor options
+          </span>
+          <span className="rounded-full border border-teal-300/20 bg-slate-950/40 px-4 py-2 text-teal-100">
+            Freshly made
+          </span>
+        </div>
+
+        <p className="mt-6 text-base leading-7 text-slate-100">
+          Instead of managing an entire shelf, Bit2Bio combines what your body
+          needs into one personalized formula with the flavor experience you
+          prefer.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
       {/* PRINTER */}
       <section id="about" className="border-y border-white/10 bg-slate-900/60">
         <div className="mx-auto max-w-7xl px-6 py-20 lg:px-8">
