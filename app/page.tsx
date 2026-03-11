@@ -13,52 +13,57 @@ export default function Page() {
         <div className="absolute inset-0 bg-[linear-gradient(to_bottom,transparent,rgba(2,6,23,0.25),rgba(2,6,23,0.7))]" />
 
         <div className="relative mx-auto grid max-w-7xl items-center gap-10 px-4 py-14 sm:px-6 sm:py-16 lg:grid-cols-2 lg:gap-16 lg:px-8 lg:py-24">
-          <div className="max-w-2xl">
-            <div className="mb-4 text-xs uppercase tracking-[0.3em] text-teal-300 sm:mb-5 sm:text-sm sm:tracking-[0.35em]">
-              Precision Nutrient Printing
-            </div>
+        <div className="max-w-2xl">
 
-            <h1 className="text-4xl font-semibold leading-tight tracking-tight sm:text-5xl md:text-6xl xl:text-7xl">
-              Precision Nutrition
-              <br />
-              built from your biology.
-            </h1>
+{/* MAIN HEADING */}
+<h1 className="text-4xl font-semibold leading-tight tracking-tight sm:text-5xl md:text-6xl xl:text-7xl">
+  Precision Nutrient Printing
+</h1>
 
-            <div className="mt-6 h-px w-full max-w-xl bg-gradient-to-r from-teal-400 via-cyan-300/70 to-transparent" />
+{/* SUBTITLE */}
+<p className="mt-4 text-lg text-teal-300 sm:text-xl">
+  Precision Nutrition built from your biology
+</p>
 
-            <p className="mt-6 max-w-2xl text-base leading-7 text-slate-300 sm:mt-8 sm:text-lg sm:leading-8 md:text-xl">
-              Upload your biomarkers. We build your formula. Manufactured fresh
-              for you.
-            </p>
+{/* LINE */}
+<div className="mt-6 h-px w-full max-w-xl bg-gradient-to-r from-teal-400 via-cyan-300/70 to-transparent" />
 
-            <p className="mt-4 max-w-xl text-sm leading-7 text-slate-400 sm:text-base">
-              Bit2Bio transforms biomarker data into a personalized nutrient
-              blueprint, then creates a precision supplement formula designed
-              specifically for your biology.
-            </p>
+{/* DESCRIPTION */}
+<p className="mt-6 max-w-2xl text-base leading-7 text-slate-300 sm:text-lg sm:leading-8 md:text-xl">
+  Upload your biomarkers. Collect at Home. We build your formula. Manufactured fresh for you.
+</p>
 
-            <div className="mt-8 flex flex-col gap-4 sm:mt-10 sm:flex-row">
-              <a
-                href="/get-started"
-                className="rounded-xl bg-teal-500 px-6 py-3.5 text-center text-sm font-semibold text-white transition hover:bg-teal-400 sm:px-8 sm:py-4"
-              >
-                ANALYZE MY BIOMARKERS
-              </a>
+<p className="mt-4 max-w-xl text-sm leading-7 text-slate-400 sm:text-base">
+  Bit2Bio transforms biomarker data into a personalized nutrient blueprint,
+  then creates a precision supplement formula designed specifically for
+  your biology.
+</p>
 
-              <a
-                href="/get-started"
-                className="rounded-xl border border-white/20 bg-white px-6 py-3.5 text-center text-sm font-semibold text-slate-900 transition hover:bg-slate-100 sm:px-8 sm:py-4"
-              >
-                TAKE THE HEALTH QUIZ
-              </a>
-            </div>
+{/* BUTTONS */}
+<div className="mt-8 flex flex-col gap-4 sm:mt-10 sm:flex-row">
+  <a
+    href="/get-started"
+    className="rounded-xl bg-teal-500 px-6 py-3.5 text-center text-sm font-semibold text-white transition hover:bg-teal-400 sm:px-8 sm:py-4"
+  >
+    ANALYZE MY BIOMARKERS
+  </a>
 
-            <div className="mt-8 flex flex-wrap gap-x-6 gap-y-3 text-sm text-slate-400 sm:mt-10 sm:gap-x-8">
-              <span>Biomarker Driven</span>
-              <span>Personalized Formula</span>
-              <span>Manufactured Fresh</span>
-            </div>
-          </div>
+  <a
+    href="/get-started"
+    className="rounded-xl border border-white/20 bg-white px-6 py-3.5 text-center text-sm font-semibold text-slate-900 transition hover:bg-slate-100 sm:px-8 sm:py-4"
+  >
+    TAKE THE HEALTH QUIZ
+  </a>
+</div>
+
+{/* TAGS */}
+<div className="mt-8 flex flex-wrap gap-x-6 gap-y-3 text-sm text-slate-400 sm:mt-10 sm:gap-x-8">
+  <span>Biomarker Driven</span>
+  <span>Personalized Formula</span>
+  <span>Manufactured Fresh</span>
+</div>
+
+</div>
 
           <div className="relative flex justify-center lg:justify-end">
             <div className="absolute inset-0 -z-10 blur-3xl">
@@ -91,11 +96,11 @@ export default function Page() {
             </div>
 
             <h2 className="mt-5 text-3xl font-semibold tracking-tight sm:mt-6 sm:text-4xl md:text-5xl lg:text-6xl">
-              Your body isn&apos;t generic.
+              DATA TO DOSE.
             </h2>
 
             <p className="mt-5 text-lg text-slate-300 sm:mt-6 sm:text-xl">
-              But most supplements still are.
+              Your body isn't generic.
             </p>
 
             <p className="mx-auto mt-4 max-w-3xl text-sm leading-7 text-slate-400 sm:text-base sm:leading-8 md:text-lg">
@@ -135,6 +140,7 @@ export default function Page() {
                   <span>Produced months in advance</span>
                 </li>
                 <li className="flex items-start gap-3">
+                <span className="mt-2 h-2 w-2 rounded-full bg-slate-500" />
                   <span>Stored in warehouses</span>
                 </li>
               </ul>
@@ -165,11 +171,11 @@ export default function Page() {
 
             <div className="rounded-[1.5rem] border border-teal-400/20 bg-gradient-to-br from-teal-400/10 via-cyan-400/10 to-slate-900 p-6 shadow-[0_0_60px_rgba(45,212,191,0.08)] sm:rounded-[2rem] sm:p-8">
               <div className="flex items-center justify-between gap-4">
-                <div className="text-xs uppercase tracking-[0.22em] text-teal-200 sm:text-sm sm:tracking-[0.28em]">
-                  Bit2Bio
-                </div>
+              <div className="text-sm font-semibold tracking-tight text-white sm:text-base">
+  Bit<span className="text-teal-400">2</span>Bio
+</div>
                 <div className="rounded-full border border-teal-300/20 bg-teal-300/10 px-3 py-1 text-xs text-teal-100">
-                  Our Model
+                  The Future
                 </div>
               </div>
 
@@ -236,9 +242,9 @@ export default function Page() {
               About us
             </div>
 
-            <h2 className="mt-5 text-3xl font-semibold tracking-tight sm:mt-6 sm:text-4xl md:text-5xl lg:text-6xl">
-              From supplement factories to precision nutrition.
-            </h2>
+            <h2 className="mt-5 text-2xl font-semibold tracking-tight sm:mt-6 sm:text-3xl md:text-4xl lg:text-5xl">
+  From mass produced supplement factories to precision nutrition.
+</h2>
 
             <p className="mt-5 text-lg leading-8 text-slate-300 sm:mt-6 sm:text-xl">
               Bit2Bio is rethinking how people access nutrition by building around
@@ -332,7 +338,7 @@ export default function Page() {
         </h3>
 
         <p className="mt-4 text-base leading-7 text-slate-300 sm:text-lg sm:leading-8">
-          Upload biomarkers and health data to understand what your body may
+          Upload biomarkers or Collect at Home to understand what your body may
           need.
         </p>
 
@@ -367,7 +373,7 @@ export default function Page() {
         </h3>
 
         <p className="mt-4 text-base leading-7 text-slate-300 sm:text-lg sm:leading-8">
-          Bit2Bio translates your biomarker insights into a personalized
+          Bit2Bio translates your biomarker insights into a AI personalized
           nutrient formula manufactured with precision.
         </p>
 
@@ -398,7 +404,7 @@ export default function Page() {
         </div>
 
         <h3 className="mt-8 text-2xl font-semibold text-white sm:text-3xl">
-          Deliver
+          Deliver Monthly 
         </h3>
 
         <p className="mt-4 text-base leading-7 text-slate-300 sm:text-lg sm:leading-8">
@@ -407,7 +413,7 @@ export default function Page() {
         </p>
 
         <p className="mt-6 text-sm font-medium text-teal-200 sm:text-base">
-          Personalized. Freshly prepared. Easy to follow.
+          Personalized. Freshly prepared.
         </p>
       </div>
     </div>
