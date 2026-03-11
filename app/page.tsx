@@ -150,15 +150,15 @@ export default function Page() {
                     never truly designed for you.
                   </p>
 
-                  <div className="overflow-hidden rounded-2xl border border-white/10 bg-slate-900/80 p-3">
-                    <Image
-                      src="/oldmodel.png"
-                      alt="Generic supplement bottles"
-                      width={500}
-                      height={360}
-                      className="h-auto w-full object-contain"
-                    />
-                  </div>
+                  <div className="p-1">
+  <Image
+    src="/oldmodel.png"
+    alt="Generic supplement bottles"
+    width={500}
+    height={360}
+    className="h-auto w-full object-contain"
+  />
+</div>
                 </div>
               </div>
             </div>
@@ -169,7 +169,7 @@ export default function Page() {
                   Bit2Bio
                 </div>
                 <div className="rounded-full border border-teal-300/20 bg-teal-300/10 px-3 py-1 text-xs text-teal-100">
-                  Better Model
+                  Our Model
                 </div>
               </div>
 
@@ -207,15 +207,15 @@ export default function Page() {
                     full of generic products.
                   </p>
 
-                  <div className="overflow-hidden rounded-2xl border border-teal-300/15 bg-slate-950/40 p-3">
-                    <Image
-                      src="/bit2biomodel.png"
-                      alt="Bit2Bio personalized formula bottle"
-                      width={500}
-                      height={360}
-                      className="h-auto w-full object-contain"
-                    />
-                  </div>
+                  <div className="p-1">
+  <Image
+    src="/bit2biomodel.png"
+    alt="Bit2Bio personalized formula bottle"
+    width={500}
+    height={360}
+    className="h-auto w-full object-contain"
+  />
+</div>
                 </div>
               </div>
             </div>
@@ -283,98 +283,136 @@ export default function Page() {
       </section>
 
       {/* HOW IT WORKS */}
-      <section
-        id="how"
-        className="relative overflow-hidden bg-slate-950 px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24"
-      >
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(45,212,191,0.08),_transparent_28%),radial-gradient(circle_at_bottom_right,_rgba(59,130,246,0.08),_transparent_24%)]" />
+<section
+  id="how"
+  className="relative overflow-hidden bg-slate-950 px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24"
+>
+  <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,_rgba(45,212,191,0.08),_transparent_28%),radial-gradient(circle_at_bottom_right,_rgba(59,130,246,0.08),_transparent_24%)]" />
 
-        <div className="relative mx-auto max-w-7xl">
-          <div className="max-w-3xl">
-            <div className="inline-flex rounded-full border border-teal-400/20 bg-teal-400/10 px-4 py-1 text-[11px] uppercase tracking-[0.24em] text-teal-200 sm:text-xs sm:tracking-[0.28em]">
-              How it works
-            </div>
+  <div className="relative mx-auto max-w-7xl">
+    <div className="max-w-3xl">
+      <div className="inline-flex rounded-full border border-teal-400/20 bg-teal-400/10 px-4 py-1 text-[11px] uppercase tracking-[0.24em] text-teal-200 sm:text-xs sm:tracking-[0.28em]">
+        How it works
+      </div>
 
-            <h2 className="mt-5 text-3xl font-semibold tracking-tight sm:mt-6 sm:text-4xl md:text-5xl lg:text-6xl">
-              Analyze. Build. Deliver.
-            </h2>
+      <h2 className="mt-5 text-3xl font-semibold tracking-tight sm:mt-6 sm:text-4xl md:text-5xl lg:text-6xl">
+        Analyze. Build. Deliver.
+      </h2>
 
-            <p className="mt-5 max-w-2xl text-base leading-7 text-slate-400 sm:mt-6 sm:text-lg sm:leading-8">
-              A simple workflow that turns your biomarker data into a smarter,
-              more personalized nutrition experience.
-            </p>
-          </div>
+      <p className="mt-5 max-w-2xl text-base leading-7 text-slate-400 sm:mt-6 sm:text-lg sm:leading-8">
+        A simple workflow that turns your biomarker data into a smarter,
+        more personalized nutrition experience.
+      </p>
+    </div>
 
-          <div className="mt-12 grid gap-6 lg:mt-16 lg:grid-cols-3">
-            <div className="rounded-[1.5rem] border border-white/10 bg-white/[0.03] p-6 sm:rounded-[2rem] sm:p-8">
-              <div className="flex items-center justify-between">
-                <div className="text-sm font-medium text-teal-300">01</div>
-                <div className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-slate-400">
-                  Analyze
-                </div>
-              </div>
+    <div className="mt-12 grid gap-6 lg:mt-16 lg:grid-cols-3">
+      {/* ANALYZE */}
+      <div className="group relative overflow-hidden rounded-[1.5rem] border border-white/10 bg-white/[0.03] p-6 transition hover:border-teal-300/20 hover:bg-white/[0.04] sm:rounded-[2rem] sm:p-8">
+        <div className="absolute inset-x-8 top-0 h-px bg-gradient-to-r from-transparent via-teal-300/40 to-transparent" />
 
-              <h3 className="mt-8 text-2xl font-semibold text-white sm:text-3xl">
-                Analyze
-              </h3>
-
-              <p className="mt-4 text-base leading-7 text-slate-300 sm:text-lg sm:leading-8">
-                Upload biomarkers and health data to understand what your body may
-                need.
-              </p>
-
-              <p className="mt-6 text-sm font-medium text-teal-200 sm:text-base">
-                Your biomarkers become your starting point.
-              </p>
-            </div>
-
-            <div className="rounded-[1.5rem] border border-white/10 bg-white/[0.03] p-6 sm:rounded-[2rem] sm:p-8">
-              <div className="flex items-center justify-between">
-                <div className="text-sm font-medium text-teal-300">02</div>
-                <div className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-slate-400">
-                  Build
-                </div>
-              </div>
-
-              <h3 className="mt-8 text-2xl font-semibold text-white sm:text-3xl">
-                Build
-              </h3>
-
-              <p className="mt-4 text-base leading-7 text-slate-300 sm:text-lg sm:leading-8">
-                Bit2Bio translates that information into a more personalized
-                nutrient strategy.
-              </p>
-
-              <p className="mt-6 text-sm font-medium text-teal-200 sm:text-base">
-                Your data informs your formula.
-              </p>
-            </div>
-
-            <div className="rounded-[1.5rem] border border-white/10 bg-white/[0.03] p-6 sm:rounded-[2rem] sm:p-8">
-              <div className="flex items-center justify-between">
-                <div className="text-sm font-medium text-teal-300">03</div>
-                <div className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-slate-400">
-                  Deliver
-                </div>
-              </div>
-
-              <h3 className="mt-8 text-2xl font-semibold text-white sm:text-3xl">
-                Deliver
-              </h3>
-
-              <p className="mt-4 text-base leading-7 text-slate-300 sm:text-lg sm:leading-8">
-                Personalized nutrition is prepared and delivered in a simpler
-                routine built around you.
-              </p>
-
-              <p className="mt-6 text-sm font-medium text-teal-200 sm:text-base">
-                Freshly made. Easy to follow.
-              </p>
-            </div>
+        <div className="flex items-center justify-between">
+          <div className="text-sm font-medium text-teal-300">01</div>
+          <div className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-slate-400">
+            Analyze
           </div>
         </div>
-      </section>
 
+        <div className="mt-6 flex h-[220px] items-center justify-center rounded-[1.5rem] border border-white/10 bg-gradient-to-br from-slate-900 to-slate-950 p-6">
+          <Image
+            src="/analyze-device.png"
+            alt="At home biomarker analyzer"
+            width={420}
+            height={420}
+            className="h-auto w-full max-w-[240px] object-contain"
+          />
+        </div>
+
+        <h3 className="mt-8 text-2xl font-semibold text-white sm:text-3xl">
+          Analyze
+        </h3>
+
+        <p className="mt-4 text-base leading-7 text-slate-300 sm:text-lg sm:leading-8">
+          Upload biomarkers and health data to understand what your body may
+          need.
+        </p>
+
+        <p className="mt-6 text-sm font-medium text-teal-200 sm:text-base">
+          Your biomarkers become your starting point.
+        </p>
+      </div>
+
+      {/* BUILD */}
+      <div className="group relative overflow-hidden rounded-[1.5rem] border border-white/10 bg-white/[0.03] p-6 transition hover:border-teal-300/20 hover:bg-white/[0.04] sm:rounded-[2rem] sm:p-8">
+        <div className="absolute inset-x-8 top-0 h-px bg-gradient-to-r from-transparent via-teal-300/40 to-transparent" />
+
+        <div className="flex items-center justify-between">
+          <div className="text-sm font-medium text-teal-300">02</div>
+          <div className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-slate-400">
+            Build
+          </div>
+        </div>
+
+        <div className="mt-6 flex h-[220px] items-center justify-center rounded-[1.5rem] border border-white/10 bg-gradient-to-br from-slate-900 to-slate-950 p-6">
+          <Image
+            src="/build-printer.png"
+            alt="Personalized supplement manufacturing"
+            width={420}
+            height={420}
+            className="h-auto w-full max-w-[260px] object-contain"
+          />
+        </div>
+
+        <h3 className="mt-8 text-2xl font-semibold text-white sm:text-3xl">
+          Build
+        </h3>
+
+        <p className="mt-4 text-base leading-7 text-slate-300 sm:text-lg sm:leading-8">
+          Bit2Bio translates your biomarker insights into a personalized
+          nutrient formula manufactured with precision.
+        </p>
+
+        <p className="mt-6 text-sm font-medium text-teal-200 sm:text-base">
+          Your data becomes your formula.
+        </p>
+      </div>
+
+      {/* DELIVER */}
+      <div className="group relative overflow-hidden rounded-[1.5rem] border border-white/10 bg-white/[0.03] p-6 transition hover:border-teal-300/20 hover:bg-white/[0.04] sm:rounded-[2rem] sm:p-8">
+        <div className="absolute inset-x-8 top-0 h-px bg-gradient-to-r from-transparent via-teal-300/40 to-transparent" />
+
+        <div className="flex items-center justify-between">
+          <div className="text-sm font-medium text-teal-300">03</div>
+          <div className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-slate-400">
+            Deliver
+          </div>
+        </div>
+
+        <div className="mt-6 flex h-[220px] items-center justify-center rounded-[1.5rem] border border-white/10 bg-gradient-to-br from-slate-900 to-slate-950 p-6">
+          <Image
+            src="/deliver-box.png"
+            alt="Bit2Bio personalized supplement delivery"
+            width={420}
+            height={420}
+            className="h-auto w-full max-w-[260px] object-contain"
+          />
+        </div>
+
+        <h3 className="mt-8 text-2xl font-semibold text-white sm:text-3xl">
+          Deliver
+        </h3>
+
+        <p className="mt-4 text-base leading-7 text-slate-300 sm:text-lg sm:leading-8">
+          Your personalized nutrient formula is packaged and delivered
+          directly to your door, ready to support your health routine.
+        </p>
+
+        <p className="mt-6 text-sm font-medium text-teal-200 sm:text-base">
+          Personalized. Freshly prepared. Easy to follow.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
       {/* FAQ */}
       <section
         id="faq"
@@ -431,7 +469,7 @@ export default function Page() {
         </div>
       </section>
 
-      {/* REFER A FRIEND */}
+      {/* REFER A FRIEND
       <section id="refer" className="relative overflow-hidden bg-slate-950">
         <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 sm:py-20 lg:px-8 lg:py-24">
           <div className="overflow-hidden rounded-[1.75rem] border border-teal-300/15 bg-gradient-to-r from-teal-400/10 via-cyan-400/10 to-slate-900 p-6 sm:rounded-[2rem] sm:p-8 lg:p-10">
@@ -489,7 +527,7 @@ export default function Page() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* CTA */}
       <section

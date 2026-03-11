@@ -6,7 +6,7 @@ export default function Header() {
             href="/"
             className="text-[28px] font-semibold tracking-tight text-white sm:text-[32px] md:text-[34px]"
           >
-            bit<span className="text-teal-400">2</span>bio
+            Bit<span className="text-teal-400">2</span>Bio
           </a>
   
           <nav className="hidden items-center gap-6 lg:flex xl:gap-8">
@@ -34,12 +34,12 @@ export default function Header() {
             >
               FAQs
             </a>
-            <a
+            {/* <a
               href="/#refer"
               className="text-[15px] font-medium text-slate-300 transition hover:text-white"
             >
               Refer a Friend
-            </a>
+            </a> */}
   
             <a
               href="/get-started"
